@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657615704969",
+    "firebase_url": "https://letterbox-mit-default-rtdb.firebaseio.com",
+    "project_id": "letterbox-mit",
+    "storage_bucket": "letterbox-mit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657615704969:android:223756bc90b625c1878758",
+        "android_client_info": {
+          "package_name": "com.example.contact_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657615704969-6205l5osh48nsm0h64tn46enf1jdfjkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcIQLm7svNc87gykBPfPzKIqrDfDefpp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657615704969-6205l5osh48nsm0h64tn46enf1jdfjkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
