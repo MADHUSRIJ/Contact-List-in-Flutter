@@ -1,13 +1,27 @@
+import 'package:contact_list/view_details.dart';
 import 'package:flutter/material.dart';
 
 class get_data extends StatefulWidget {
   final String? name;
   final String? home;
   final String? cell;
+  final String? address;
+  final String? city;
+  final String? state;
+  final String? zip;
   final Color? color;
   final Color? bg;
   const get_data(
-      {Key? key, this.name, this.home, this.cell, this.color, this.bg})
+      {Key? key,
+      this.name,
+      this.home,
+      this.cell,
+      this.color,
+      this.bg,
+      this.address,
+      this.city,
+      this.state,
+      this.zip})
       : super(key: key);
 
   @override
@@ -45,7 +59,7 @@ class _get_dataState extends State<get_data> {
                   widget.name!,
                   style: TextStyle(
                       color: widget.color,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w400,
                       fontSize: h * 3),
                 ),
               ],
@@ -67,10 +81,26 @@ class _get_dataState extends State<get_data> {
                 ),
               ],
             ),
-            trailing: Icon(
-              Icons.phone,
-              size: h * 3.2,
-              color: Colors.white54,
+            trailing: GestureDetector(
+              onTap: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => view(
+                              name: widget.name,
+                              home: widget.home,
+                              cell: widget.cell,
+                              address: widget.address,
+                              city: widget.city,
+                              state: widget.state,
+                              zip: widget.zip,
+                            )));
+              },
+              child: Icon(
+                Icons.arrow_forward_sharp,
+                size: h * 3.2,
+                color: Colors.white54,
+              ),
             ),
             isThreeLine: true,
           ),

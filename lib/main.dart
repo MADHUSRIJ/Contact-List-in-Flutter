@@ -180,6 +180,10 @@ class _HomeState extends State<Home> {
                                 name: document['name'],
                                 home: document['home'],
                                 cell: document['cell'],
+                                address: document['address'],
+                                city: document['city'],
+                                state: document['state'],
+                                zip: document['zip'],
                               );
                             }).toList(),
                           ),
